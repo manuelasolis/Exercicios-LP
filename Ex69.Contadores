@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+    float valor, soma = 0;
+    int contador = 0;
+    char resp = 'S';
+
+    while(resp == 'S' || resp == 's'){
+        printf("Digite o valor da mercadoria: ");
+        scanf("%f", &valor);
+
+        soma += valor;
+        contador++;
+
+        printf("Mais mercadorias (S/N)? ");
+        scanf(" %c", &resp);
+    }
+
+    printf("Valor total: %.2f\n", soma);
+    printf("Media: %.2f\n", soma / contador);
+}
