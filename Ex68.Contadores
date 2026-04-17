@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int q;
+    float valor, soma = 0;
+
+    printf("Digite a quantidade: ");
+    scanf("%d", &q);
+
+    for(int i = 1; i <= q; i++){
+        printf("Digite o valor %d: ", i);
+        scanf("%f", &valor);
+        soma += valor;
+    }
+
+    printf("Valor total: %.2f\n", soma);
+    printf("Media: %.2f\n", soma / q);
+}
