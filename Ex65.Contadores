@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    int a, b, soma = 0;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &a);
+
+    printf("Digite o segundo valor: ");
+    scanf("%d", &b);
+
+    for(int i = a; i <= b; i++){
+        soma += i;
+    }
+
+    printf("Soma entre %d e %d: %d\n", a, b, soma);
+}
